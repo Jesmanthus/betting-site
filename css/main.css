@@ -1,0 +1,432 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input {
+  outline: none;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?o5whjs");
+  src: url("../fonts/icomoon.eot?o5whjs#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?o5whjs") format("truetype"),
+    url("../fonts/icomoon.woff?o5whjs") format("woff"),
+    url("../fonts/icomoon.svg?o5whjs#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "\e900";
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?69817");
+  src: url("../fonts/icomoon.eot?69817#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?69817") format("truetype"),
+    url("../fonts/icomoon.woff?69817") format("woff"),
+    url("../fonts/icomoon.svg?69817#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-heart:before {
+  content: "\e901";
+}
+
+body {
+  font-family: "Open Sans", system-ui, sans-serif;
+  height: 100vh;
+}
+
+/* HEADER */
+.header {
+  background-color: #010101;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 7px hsl(0, 95%, 30%);
+  padding: 0 2.5em;
+  font-size: 20px;
+}
+
+.header figure {
+  margin: 0;
+}
+
+.header-image {
+  height: 60px;
+  position: relative;
+  top: -0.3em;
+  left: -1em;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+.menu-item {
+  margin-left: 1.8em;
+  display: flex;
+  align-items: center;
+}
+
+.menu-link {
+  color: #fefefe;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu-link:hover {
+  color: hsl(354, 100%, 45%);
+}
+
+.icon-home {
+  font-size: 1.8em;
+}
+
+.icon-heart {
+  font-size: 1.4em;
+}
+
+/* MAIN */
+.main-title {
+  text-align: center;
+  padding: 0 1em;
+  padding-top: 2em;
+  padding-bottom: 2.7em;
+}
+
+.waifus {
+  background-image: url("../images/curve.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  margin-top: 8em;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.waifu {
+  background-color: white;
+  width: 20em;
+  height: 100%;
+  margin: 2.5em 3.5em;
+  position: relative;
+  top: -11.5em;
+  border-radius: 7px;
+  box-shadow: 0 0 10px #c1bcbc;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.waifu-imageContainer {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+  overflow: hidden;
+  max-height: 350px;
+}
+
+.waifu-image {
+  width: 100%;
+}
+
+.waifu-details {
+  padding: 0 0.4em;
+}
+
+.waifu-name {
+  margin-bottom: 0.25em;
+}
+
+.waifu-description {
+  margin-top: 0.2em;
+}
+
+.waifu-link {
+  font-size: 1.2em;
+  color: white;
+  font-weight: 700;
+  background-color: hsl(1, 96%, 45%);
+  border-radius: 40px;
+  text-decoration: none;
+  margin: 0 15%;
+  margin-bottom: 1em;
+  display: inline-block;
+  width: 70%;
+  padding: 0.8em;
+  text-align: center;
+  border-bottom: 7px solid hsl(1, 90%, 35%);
+}
+
+.waifu-link:hover {
+  background-color: hsl(1, 90%, 35%);
+  border-color: hsl(1, 96%, 45%);
+}
+
+/* SECTION: CHIBI */
+.chibi-container {
+  display: flex;
+  justify-content: center;
+}
+
+.chibi-article,
+.chibi-image {
+  width: 100%;
+  max-width: 1080px;
+}
+
+.chibi-imageContainer {
+  margin: 0;
+}
+
+.chibi-title {
+  font-size: 3em;
+  text-align: center;
+}
+
+/* SECTION: MENTION */
+.mentions {
+  padding: 4em 0;
+}
+
+.mentions-title {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 0;
+}
+
+.opacity-class {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.mentions-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mention-article {
+  width: 300px;
+  box-shadow: 0 5px 5px #c1bcbc;
+  flex-shrink: 0;
+  margin: 1em 0.5em;
+}
+
+.mention-image {
+  width: 100%;
+}
+
+.mention-text {
+  padding: 0 0.5em;
+}
+
+.mention-name {
+  margin: 0.5em 0;
+}
+
+.mention-description {
+  margin-top: 0.6em;
+}
+
+/* FOOTER */
+.footer {
+  background-color: hsl(220, 6%, 17%);
+  color: white;
+  height: 5em;
+  padding: 0 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.email-contact {
+  font-style: normal;
+}
+
+.email-link {
+  color: white;
+  text-decoration: none;
+}
+
+/* PAGE: WAIFUS */
+.waifu-line {
+  width: 90%;
+  border: solid 1px hsl(0, 0%, 100%);
+}
+
+.waifu-section {
+  padding: 3em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(
+    hsl(358, 77%, 82%) 20%,
+    hsl(200, 52%, 72%) 38%,
+    hsl(50, 95%, 84%) 64%,
+    hsl(2, 64%, 90%) 85%
+  );
+}
+
+.waifu-article {
+  max-width: 1024px;
+  margin: 2em 5%;
+}
+
+.waifu-icon {
+  width: 20%;
+  border-radius: 10px;
+  float: left;
+  margin-right: 2.5%;
+}
+
+.waifu-title {
+  margin: 0;
+}
+
+.waifu-personality {
+  line-height: 1.2em;
+}
+
+/* PAGE: APOSTAR */
+.body-bet {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bet-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.bet-imageContainerDesktop {
+  margin: 0;
+  margin-right: 2%;
+  height: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bet-imageDesktop {
+  height: 110%;
+}
+
+.bet-imageContainerMobile {
+  display: none;
+}
+
+.bet-form {
+  width: 450px;
+  margin: 5em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em 0;
+  border-radius: 3px;
+  box-shadow: 0 0 10px #c1bcbc;
+  line-height: 1.6em;
+}
+
+.bet-label {
+  width: 90%;
+  margin-bottom: 0.8em;
+}
+
+.bet-input {
+  width: 100%;
+  padding: 0.5em 0.4em;
+}
+
+.bet-confirm {
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: 700;
+  background-color: hsl(1, 96%, 45%);
+  color: white;
+  width: 90%;
+  padding: 0.5em;
+  border: none;
+  border-bottom: 5px solid hsl(1, 96%, 35%);
+  border-radius: 3px;
+}
+
+.bet-confirm:hover {
+  background-color: hsl(1, 96%, 35%);
+}
+
+/* PAGE: PAGO-EXITOSO */
+.pay-section {
+  height: 100vh;
+  background-color: hsl(225, 26%, 9%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pay-image {
+  max-width: 768px;
+  width: 35%;
+  border-radius: 10px;
+}
+
+.pay-text {
+  color: white;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+.pay-textLink {
+  font-weight: 400;
+  color: white;
+}

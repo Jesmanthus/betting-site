@@ -1,0 +1,129 @@
+br {
+  display: none;
+}
+
+/* HEADER */
+.header {
+  padding: 0 1.3em;
+}
+
+.header-image {
+  height: 50px;
+}
+
+.menu-list {
+  padding: 0;
+}
+
+.menu-item {
+  margin-left: 1.2em;
+}
+
+.menu-item:first-child {
+  margin-left: 0;
+}
+
+/* MAIN */
+.main-title {
+  font-size: 1.2em;
+  padding-top: 1em;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+}
+
+.waifus {
+  margin-top: 2.5em;
+  flex-direction: column;
+  align-items: center;
+}
+
+.waifu {
+  min-width: 300px;
+  max-width: 325px;
+  width: 90%;
+  top: -5em;
+  margin: 1.5em 0;
+}
+
+/* SECTION: CHIBI */
+.chibi-title {
+  font-size: 2em;
+}
+
+/* SECTION: MENTIONS */
+.mentions-title {
+  font-size: 1.8em;
+}
+
+.mention-article {
+  width: 45%;
+  margin: 3% 1.5%;
+}
+
+/* FOOTER */
+.footer {
+  font-size: 12px;
+}
+
+/* PAGE: WAIFUS */
+.waifu-line {
+  width: 93%;
+}
+
+.waifu-section {
+  padding: 1em 0;
+}
+
+.waifu-icon {
+  width: 40%;
+}
+
+.waifu-personality {
+  margin: 0.4em 0;
+}
+
+/* PAGE: APOSTAR */
+.bet-section {
+  align-items: flex-start;
+  padding-top: 3em;
+}
+
+.bet-form {
+  margin-top: 0;
+  max-width: 400px;
+  width: 80%;
+  padding-top: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bet-imageContainerMobile {
+  display: block;
+  margin: 0;
+  height: 250px;
+  overflow: hidden;
+  border-bottom: 3px solid  hsl(0, 0%, 15%);
+  margin-bottom: 1em;
+}
+
+.bet-imageMobile {
+  width: 100%;
+}
+
+.bet-imageContainerDesktop {
+  display: none;
+}
+
+
+
+/* PAGE: PAGO-EXITOSO */
+.pay-image {
+  width: 80%;
+  border-radius: 10px;
+  margin-bottom: 2%;
+}
+
+.pay-text {
+  margin: 0 1%;
+  font-size: 1.1em;
+}
