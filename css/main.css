@@ -72,7 +72,6 @@ input {
 
 body {
   font-family: "Open Sans", system-ui, sans-serif;
-  height: 100vh;
 }
 
 /* HEADER */
@@ -338,13 +337,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 100vh;
 }
 
 .bet-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: auto;
 }
 
 .bet-imageContainerDesktop {
